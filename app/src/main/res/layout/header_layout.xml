@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+   <!-- <data>
+        <variable
+            name="viewModel"
+            type="com.sikandar.groceryapp.ui.dashboard.FirstDashboardViewModel"/>
+    </data>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rr_user"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_margin="8dp"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="60dp"
+            android:layout_alignLeft="@+id/img_user"
+            android:text="Sikandar Vishwakarma"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/mediumText"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_yerow"
+            app:tint="?android:attr/textColorPrimary"/>
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="0dp"
+    android:background="@color/grey"/>
+
+
+</LinearLayout>
+</layout>

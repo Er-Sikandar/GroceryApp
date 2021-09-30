@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="0dp">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="250dp"
+            android:minHeight="200dp"
+            android:src="@drawable/app_logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_15sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login with phone number"
+                android:fontFamily="@font/regular"
+                android:id="@+id/txt_top"
+                android:textSize="@dimen/largeText"/>
+
+            <TextView
+                android:id="@+id/txt_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_top"
+                android:fontFamily="@font/regular"
+                android:padding="@dimen/_5sdp"
+                android:text="Login with phone number"
+                android:textSize="@dimen/smallText" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/txt_second"
+                android:id="@+id/ll_et"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+<com.hbb20.CountryCodePicker
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="match_parent"
+    app:textSize="16sp"
+   app:contentColor="@color/purple_500"
+    android:gravity="center_vertical"
+  app:hideNameCode="true"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/country_code"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Enter 10 digit phone number"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:maxLength="10"
+                    android:minHeight="50dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_et"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/regular"
+                android:visibility="gone"
+                android:text="Your number is safe with us, we don't use your number for any unsolicited communication"
+                android:textSize="@dimen/smallText" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/last"
+                android:text="Get Otp"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

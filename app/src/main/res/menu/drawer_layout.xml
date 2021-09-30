@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="First"
+        android:id="@+id/first"/>
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="Second"
+        android:id="@+id/second"/>
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="Third"
+        android:id="@+id/third"/>
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="Fourth"
+        android:id="@+id/forth"/>
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="First"
+        android:id="@+id/fifth"/>
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="Second"
+        android:id="@+id/sixth"/>
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="Third sikandar"
+        android:id="@+id/seventh" />
+    <item android:icon="@drawable/ic_double_arrow"
+        android:title="Fourth Fouth"
+        android:id="@+id/eight"/>
+    </group>
+</menu>
